@@ -10,10 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema[8.0].define(version: 2024_12_15_210845) do
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "content"
+=======
+ActiveRecord::Schema[8.0].define(version: 2024_12_15_220602) do
+  create_table "articles", force: :cascade do |t|
+    t.string "title"
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "contacts", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.text "message"
+>>>>>>> 20b2a5b (Add contact page)
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   root 'main#index'
 
   get 'articles', to: 'articles#index'
@@ -21,3 +22,13 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 end
+=======
+  get "contacts/new"
+  get "contacts/create"
+  get "home/index"
+  root 'home#index'  # The home page
+  resources :articles
+  resources :contacts, only: [:new, :create]
+
+end
+>>>>>>> 20b2a5b (Add contact page)
