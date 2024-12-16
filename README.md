@@ -233,7 +233,3 @@ Visit `http://localhost:3000` to see your homepage with recent articles. You can
 
 ---
 
-That’s a basic setup for your portfolio app with articles and a contact form! You can extend this with more features like image uploads, rich text editors for the articles, and even email notifications for the contact form using `ActionMailer`.
-
-Let me know if you need further help with any of the steps!
->>>>>>> 20b2a5b (Add contact page)
